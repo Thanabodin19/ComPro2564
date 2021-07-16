@@ -1,0 +1,9 @@
+#12. จงเขียนโปรแกรมรับค่า n จากคีย์บอร์ดพร้อมแสดงรูป
+n = int(input())
+for i in range(n-1, -1, -1):
+    for j in range(i+1):
+        if j == 0 or j == i:
+            print("*", end = "")
+        else:
+            print(end = " ")
+    print()
