@@ -1,0 +1,16 @@
+'''13.จงเขียนโปรแกรมรับค่าตรวจสอบ username และ password และจะรับค่าไปเรื่อย ๆ 
+จนกว่าจะใส่ได้ถูกต้อง โดยโปรแกรมต้องสามารถระบุได้ว่า username หรือ password ที่ผิด 
+และโปรแกรมจะตั้ง username และ password เริ่มต้นมาให้เป็น admin และ 1234 ตามลำดับ 
+และเมื่อ log in สำเร็จโปรแกรมจะต้องถามหาถึงการตั้งค่า username และ password 
+ใหม่และแสดงผลลัพธ์ username และ password ที่เปลี่ยนแปลงไปแล้ว'''
+while True:
+  User = input("Enter username : ")
+  pw = input("Enter password : ")
+  if User == "admin" and pw == "1234":
+    New_user = input("Enter your new username : ")
+    New_pw = input("Enter your new password : ")
+    print("Your new username :",New_user)
+    print("Your new password :",New_pw)
+    break
+  else:
+    print("Your username is wrong")
