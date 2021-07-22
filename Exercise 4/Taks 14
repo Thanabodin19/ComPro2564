@@ -1,0 +1,16 @@
+'''14. จงเขียนโปรแกรมรับข้อความ เพื่อตรวจสอบถึงจ านวนตัวพิมพ์ใหญ่ จ านวนตัวพิมพ์เล็ก และอักขระพิเศษ
+ว่ามีทั้งหมดกี่ตัวในข้อความที่ได้รับเข้ามา'''
+n = input("Entre string : ")
+up = 0
+low = 0
+Special = 0
+for i in n:
+  if i.isupper() == True:
+    up += 1
+  elif i.islower() == True:
+    low += 1
+  else:
+    Special += 1
+print("Uppercase character number is ",up)
+print("lowercase character number is ",low)
+print("Special character number is ",Special)
