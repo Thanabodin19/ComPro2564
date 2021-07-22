@@ -1,0 +1,25 @@
+'''จงเขียนโปรแกรมรับค่าข้อความไปเรื่อย ๆ โดยข้อมูลที่รับเข้าจะถูกเก็บแบบ Stack เมื่อโปรแกรมรับ
+ข้อความ ข้อความจะถูกเก็บแบบซ้อนทับ และแสดงผล เมื่อโปรแกรมรับค่า “pop” หากมี item อยู่ข้าง
+ในให้ท าการน าข้อมูลตัวสุดท้ายออก และแสดงผลข้อมูลที่เหลือ หากไม่มี item อยู่ข้างในให้แสดงข้อความ
+ว่า “No item inside” และเมื่อโปรแกรมได้รับค าว่า “cancel” ให้โปรแกรมหยุดท างาน และแสดงผล 
+“End the program” '''
+word = []
+while True:
+  n = input("Enter your word item : ")
+  if n == "cancel":
+    print("End the program!!!?")
+    break
+  elif n == "pop":
+    if word == []:
+      print("No item inside", end = "")
+    else:
+      word.pop(-1)
+      print("Data >>> ", end = "")
+      for i in word:
+        print(i, end = " ")
+  else:
+    word.append(n)
+    print("Data >>> ", end = "")
+    for i in word:
+      print(i, end = " ")
+  print()
